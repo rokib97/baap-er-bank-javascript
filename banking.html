@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Banking Page</title>
+    <!-- bootstrp cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center my-5">
+        Lets Get Some <span class="text-success fw-bold">Money</span>
+      </h1>
+    </header>
+    <main>
+      <!-- balance and transection  -->
+      <section class="container px-4">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="bg-primary border rounded-3 p-4 text-white">
+              <h3 class="fs-4 fw-bold">Deposite</h3>
+              <h4 class="fs-1 fw-bolder">
+                $<span id="depCurrentValue">00</span>
+              </h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="bg-danger border rounded-3 p-4 text-white">
+              <h3 class="fs-4 fw-bold">Withdraw</h3>
+              <h4 class="fs-1 fw-bolder">
+                $<span id="currnet-withdraw">00</span>
+              </h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="bg-success border rounded-3 p-4 text-white">
+              <h3 class="fs-4 fw-bold">Balance</h3>
+              <h4 class="fs-1 fw-bolder">
+                $<span id="current-balance">1200</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- diposite and withdraw  -->
+      <section class="container px-4 my-4">
+        <div class="row g-4">
+          <div class="col-lg-6 col-md-6">
+            <div class="bg-info border rounded-3 p-4 text-white">
+              <h3 class="fs-4 fw-bold">Please Deposite</h3>
+              <div>
+                <input
+                  id="deposite-input"
+                  class="w-50 border rounded-2 d-blcik border-info d-block px-2"
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="$ amount you want to deposite"
+                  required
+                />
+                <button
+                  id="deposite-btn"
+                  class="btn btn-warning mt-3 border rounded-2 border-info text-white fw-bold"
+                >
+                  Deposite
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="bg-secondary border rounded-3 p-4 text-white">
+              <h3 class="fs-4 fw-bold">Please Withdraw</h3>
+              <div>
+                <input
+                  id="withdraw-input"
+                  class="w-50 border rounded-2 d-blcik border-info d-block px-2"
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="$ amount you want to withdraw"
+                  required
+                />
+                <button
+                  id="withdraw-btn"
+                  class="btn btn-warning mt-3 border rounded-2 border-info text-white fw-bold"
+                >
+                  Withdraw
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
